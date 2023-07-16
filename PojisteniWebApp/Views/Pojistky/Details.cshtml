@@ -1,0 +1,74 @@
+﻿@model PojisteniWebApp.Models.Pojistka
+
+@{
+    ViewBag.Title = "Detail";
+}
+
+<h2>Detail pojistky</h2>
+
+<div>
+    <h4>Pojistka</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Pojistenec.Jmeno)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pojistenec.Jmeno)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Pojistenec.Prijmeni)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pojistenec.Prijmeni)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PredmetPojisteni)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PredmetPojisteni)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TypPojisteni)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TypPojisteni)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Castka)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Castka)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PlatnostOd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PlatnostOd)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PlatnostDo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PlatnostDo)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Upravit", "Edit", new { id = Model.Id }, new {@class="myButtonGreen"}) |
+    @Html.ActionLink("Zpět na seznam", "Index",null, new {@class="myButtonBlue"})
+</p>

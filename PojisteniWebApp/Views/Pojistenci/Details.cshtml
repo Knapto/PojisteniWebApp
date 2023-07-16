@@ -1,0 +1,115 @@
+﻿@model PojisteniWebApp.Models.Pojistenec
+
+@{
+    ViewBag.Title = "Detail";
+}
+
+<h2>Detail pojištěnce</h2>
+
+<div>
+    <h4>Pojištěnec</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Jmeno)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Jmeno)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Prijmeni)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Prijmeni)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Heslo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Heslo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DatumNarozeni)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DatumNarozeni)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TelCislo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TelCislo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ulice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ulice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Mesto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Mesto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Psc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Psc)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Pojistky)
+        </dt>
+        <dd>
+            <table class="table">
+                <tr>
+                    <th>Typ pojištění</th>
+                    <th>Předmět pojištění</th>
+                    <th>Částka</th>
+                </tr>
+                @foreach (var item in Model.Pojistky)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.TypPojisteni)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.PredmetPojisteni)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Castka) Kč
+                        </td>
+                    </tr>
+                }
+            </table>
+        </dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Upravit", "Edit", new { id = Model.Id }, new {@class="myButtonGreen"}) |
+    @Html.ActionLink("Zpět na seznam", "Index", null, new {@class="myButtonBlue"})
+</p>

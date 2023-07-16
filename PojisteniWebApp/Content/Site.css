@@ -1,0 +1,124 @@
+﻿/* Set padding to keep content from hitting the edges */
+.body-content {
+    margin-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+.myButtonBlue {
+    box-shadow: inset 0px 1px 0px 0px #97c4fe;
+    background: linear-gradient(to bottom, #3d94f6 5%, #1e62d0 100%);
+    background-color: #3d94f6;
+    border-radius: 6px;
+    border: 1px solid #337fed;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #1570cd;
+}
+
+    .myButtonBlue:hover {
+        background: linear-gradient(to bottom, #1e62d0 5%, #3d94f6 100%);
+        background-color: #1e62d0;
+    }
+
+    .myButtonBlue:active {
+        position: relative;
+        top: 1px;
+    }
+.myButtonYellow {
+    box-shadow: inset 0px 1px 0px 0px #fce2c1;
+    background: linear-gradient(to bottom, #ffc477 5%, #fb9e25 100%);
+    background-color: #ffc477;
+    border-radius: 6px;
+    border: 1px solid #eeb44f;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #cc9f52;
+}
+
+    .myButtonYellow:hover {
+        background: linear-gradient(to bottom, #fb9e25 5%, #ffc477 100%);
+        background-color: #fb9e25;
+    }
+
+    .myButtonYellow:active {
+        position: relative;
+        top: 1px;
+    }
+.myButtonRed {
+    box-shadow: inset 0px 1px 0px 0px #f5978e;
+    background: linear-gradient(to bottom, #f24537 5%, #c62d1f 100%);
+    background-color: #f24537;
+    border-radius: 6px;
+    border: 1px solid #d02718;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #810e05;
+}
+
+    .myButtonRed:hover {
+        background: linear-gradient(to bottom, #c62d1f 5%, #f24537 100%);
+        background-color: #c62d1f;
+    }
+
+    .myButtonRed:active {
+        position: relative;
+        top: 1px;
+    }
+.myButtonGreen {
+    box-shadow: inset 0px 1px 0px 0px #a4e271;
+    background: linear-gradient(to bottom, #89c403 5%, #77a809 100%);
+    background-color: #89c403;
+    border-radius: 6px;
+    border: 1px solid #74b807;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #528009;
+}
+
+    .myButtonGreen:hover {
+        background: linear-gradient(to bottom, #77a809 5%, #89c403 100%);
+        background-color: #77a809;
+    }
+
+    .myButtonGreen:active {
+        position: relative;
+        top: 1px;
+    }
